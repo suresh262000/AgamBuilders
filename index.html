@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGAM BUILDERS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.jpeg" alt="" class="logo-image">
+                <span>AGAM BUILDERS</span>
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact-section">Contact</a></li>
+            </ul>
+            <div class="menu-toggle">&#9776;</div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Building Your Dreams</h1>
+            <p>Top Quality Construction Services</p>
+            <a href="#contact-section" class="btn">Get in Touch</a>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-cards">
+            <div class="card">
+                <h3>Construction</h3>
+                <p>We deliver high-quality construction services, transforming designs into durable, functional, and aesthetically pleasing structures.</p>
+            </div>
+            <div class="card">
+                <h3>Planing</h3>
+                <p>We excel in delivering precise, efficient, and tailored construction planning.</p>
+            </div>
+            <div class="card">
+                <h3>Estimates</h3>
+                <p>We provide accurate, detailed construction estimates to help clients plan their projects with confidence and clarity.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>Our Recent Projects</h2>
+        <div class="project-gallery">
+            <div class="project-item">Project 1</div>
+            <div class="project-item">Project 2</div>
+            <div class="project-item">Project 3</div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-wrapper">
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/image1.jpg" alt="Gallery Image 1" onclick="expandImage(this)">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/image2.jpg" alt="Gallery Image 2" onclick="expandImage(this)">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/image3.jpg" alt="Gallery Image 3" onclick="expandImage(this)">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/image4.jpg" alt="Gallery Image 4" onclick="expandImage(this)">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/image5.jpg" alt="Gallery Image 5" onclick="expandImage(this)">
+                </div>
+            </div>
+        </div>
+    
+        <!-- Modal for Expanded Image -->
+        <div id="expandedImageContainer" class="expanded-image-container" onclick="closeExpandedImage()">
+            <span class="close">&times;</span>
+            <img id="expandedImage" class="expanded-image">
+        </div>
+    </section>
+    
+    <section class="contact-section" id="contact-section">
+        <div class="contact-info">
+            <h2>Contact Us</h2>
+            <p>Feel free to reach out to us anytime. We are here to answer your questions.</p>
+            <div class="contact-details">
+                <p><strong>Company Name:</strong> Agam Builders</p>
+                <p><strong>Address:</strong> No.361, Subatham Avenue, Eniyanoor, Trichy 630102</p>
+                <p><strong>Phone:</strong> +91 9842936211</p>
+                <p><strong>Email:</strong> buildersagam@gmail.com</p>
+                <p><strong>Working Hours:</strong> Mon-Fri, 9:00 AM - 6:00 PM</p>
+            </div>
+        </div>
+
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345093747!2d144.953735315504!3d-37.8172097420217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43e0a1d9b5%3A0x5045675218ce7e0!2sVictoria%20State%20Library%20Melbourne!5e0!3m2!1sen!2sus!4v1636471986573!5m2!1sen!2sus" 
+            width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
